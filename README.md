@@ -51,7 +51,7 @@ Open items: human ratings, independent review of the gold annotations, and an in
   - processes files in memory only and never stores them.
 - **Clear failures:** scanned (image-only) PDFs are rejected with an explanation rather than summarised from empty text. The extractor sits behind an interface, so OCR can be added later.
 - **Test-result extraction:**
-  - name, value, unit and reference range are copied verbatim;
+  - name, value, unit and reference range are copied verbatim, from one-line rows, column tables, or ranges printed below the result;
   - the lab's own flag is kept separate from an arithmetic range check;
   - missing, ambiguous and conflicting data is flagged, never filled in.
 - **Reference retrieval:**
@@ -266,7 +266,7 @@ make e2e
 
 This runs Playwright browser tests against the real backend.
 
-- **Backend (224 tests):**
+- **Backend (236 tests):**
   - PDF validation and extraction on synthetic PDFs, including scanned, partly scanned, encrypted, damaged and oversized files;
   - measurement parsing, including missing ranges, value limits, conflicting rows and flag/range conflicts;
   - document approval rules, chunking and retrieval citation integrity;
@@ -374,7 +374,12 @@ The gold annotations were drafted by an AI assistant and must be independently r
 
 ## Limitations and future work
 
-- The parser recognises one result per line. Multi-column tables, results that wrap across lines and non-English reports are not supported. There is no OCR.
+- The parser recognises:
+  - one-line rows;
+  - column tables, ignoring a method/technology column;
+  - ranges printed on the lines below a result ("Bio. Ref. Interval").
+
+  Age-, sex- or category-specific range tables are shown verbatim but not compared, because choosing the right row is a clinical judgement. Results that wrap across lines, unusual layouts and non-English reports are not supported. There is no OCR.
 - The safety validator is rule-based:
   - it caught 95% of a held-out paraphrase set written by the same author, and wording it was not designed for will get past it;
   - it checks that citations exist, not that a passage actually supports the sentence citing it.

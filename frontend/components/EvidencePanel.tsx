@@ -44,7 +44,7 @@ export function EvidencePanel({
   }, [key, onStateChange]);
 
   return (
-    <section aria-labelledby="evidence-heading" className="rounded-2xl border border-border bg-surface p-6 shadow-sm">
+    <section aria-labelledby="evidence-heading" className="card p-6">
       <h3 id="evidence-heading" className="text-lg font-semibold">
         Reference information
       </h3>
@@ -61,7 +61,7 @@ export function EvidencePanel({
           </p>
         )}
         {state.kind === "error" && (
-          <p role="alert" className="rounded-lg border border-danger/40 px-3 py-2 text-sm text-danger">
+          <p role="alert" className="rounded-lg border border-danger/30 bg-danger-soft px-3 py-2 text-sm text-danger">
             {state.message}
           </p>
         )}
@@ -103,7 +103,7 @@ function EvidenceList({ evidence }: { evidence: EvidenceResponse }) {
 
 function PassageItem({ passage }: { passage: EvidencePassage }) {
   return (
-    <li className="rounded-lg bg-background p-3 text-sm">
+    <li className="rounded-lg border border-border bg-subtle p-3 text-sm">
       <details>
         <summary className="cursor-pointer">
           <span className="mr-2 rounded bg-brand-soft px-1.5 py-0.5 font-mono text-xs text-brand-strong">

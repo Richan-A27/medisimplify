@@ -36,8 +36,9 @@ export function BackendStatus() {
 
   return (
     <section
+      id="status"
       aria-labelledby="backend-status-heading"
-      className="rounded-2xl border border-border bg-surface p-6 shadow-sm"
+      className="card p-6"
     >
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h2 id="backend-status-heading" className="text-lg font-semibold">
@@ -70,7 +71,7 @@ export function BackendStatus() {
             <p className="text-sm text-muted">{status.message}</p>
             <p className="text-sm text-muted">
               Start it from the project folder with:
-              <code className="mt-1 block overflow-x-auto rounded-md bg-background px-3 py-2 font-mono text-xs">
+              <code className="mt-1 block overflow-x-auto rounded-md border border-border bg-subtle px-3 py-2 font-mono text-xs">
                 {START_COMMAND}
               </code>
             </p>
@@ -95,20 +96,20 @@ function OnlineDetails({ health, checkedAt }: { health: HealthResponse; checkedA
         </span>
       </p>
 
-      <dl className="grid gap-3 text-sm sm:grid-cols-2">
-        <div className="rounded-lg bg-background p-3">
+      <dl className="grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-5">
+        <div className="rounded-lg border border-border bg-subtle p-3">
           <dt className="text-muted">Language model</dt>
           <dd className="mt-1 font-medium">
             {health.llm.provider} · <span className="font-mono">{health.llm.model}</span>
           </dd>
         </div>
-        <div className="rounded-lg bg-background p-3">
+        <div className="rounded-lg border border-border bg-subtle p-3">
           <dt className="text-muted">API key</dt>
           <dd className={`mt-1 font-medium ${llmReady ? "text-success" : "text-warning-fg"}`}>
             {llmReady ? "Configured" : "Not configured"}
           </dd>
         </div>
-        <div className="rounded-lg bg-background p-3">
+        <div className="rounded-lg border border-border bg-subtle p-3">
           <dt className="text-muted">Reference library</dt>
           <dd className={`mt-1 font-medium ${health.knowledge_base.index_ready ? "" : "text-warning-fg"}`}>
             {health.knowledge_base.index_ready
@@ -116,11 +117,11 @@ function OnlineDetails({ health, checkedAt }: { health: HealthResponse; checkedA
               : "Not built"}
           </dd>
         </div>
-        <div className="rounded-lg bg-background p-3">
+        <div className="rounded-lg border border-border bg-subtle p-3">
           <dt className="text-muted">Maximum PDF size</dt>
           <dd className="mt-1 font-medium">{health.limits.max_upload_mb} MB</dd>
         </div>
-        <div className="rounded-lg bg-background p-3">
+        <div className="rounded-lg border border-border bg-subtle p-3">
           <dt className="text-muted">Last checked</dt>
           <dd className="mt-1 font-medium">{checkedAt.toLocaleTimeString()}</dd>
         </div>

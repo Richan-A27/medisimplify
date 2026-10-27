@@ -32,16 +32,17 @@ const STAGES: Stage[] = [
 
 export function PipelineOverview() {
   return (
-    <section aria-labelledby="pipeline-heading">
-      <h2 id="pipeline-heading" className="text-xl font-semibold">
+    <section id="how-it-works" aria-labelledby="pipeline-heading">
+      <h2 id="pipeline-heading" className="text-2xl font-semibold tracking-tight">
         How it works
       </h2>
+      <p className="mt-1 text-sm text-muted">Six auditable stages from PDF to checked summary.</p>
       <ol className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {STAGES.map((stage, index) => (
-          <li key={stage.title} className="rounded-2xl border border-border bg-surface p-5">
+          <li key={stage.title} className="card p-5 transition-shadow hover:shadow-md">
             <span
               aria-hidden="true"
-              className="flex size-8 items-center justify-center rounded-full bg-brand-soft text-sm font-semibold text-brand-strong"
+              className="flex size-8 items-center justify-center rounded-lg bg-brand-soft text-sm font-semibold text-brand-strong ring-1 ring-brand/15"
             >
               {index + 1}
             </span>

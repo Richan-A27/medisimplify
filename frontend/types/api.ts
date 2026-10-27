@@ -34,7 +34,8 @@ export type MeasurementIssue =
   | "multiple_ranges_found"
   | "flag_conflicts_with_range"
   | "duplicate_test_conflicting_values"
-  | "unrecognized_text";
+  | "unrecognized_text"
+  | "stratified_reference_range";
 
 export interface Measurement {
   test_name: string;

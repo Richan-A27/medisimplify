@@ -67,7 +67,7 @@ export function SummaryPanel({ file, onStateChange }: { file: File; onStateChang
   useEffect(() => () => controllerRef.current?.abort(), []);
 
   return (
-    <section aria-labelledby="summary-heading" className="rounded-2xl border border-border bg-surface p-6 shadow-sm">
+    <section aria-labelledby="summary-heading" className="card p-6">
       <h3 id="summary-heading" className="text-lg font-semibold">
         Plain-language summary
       </h3>
@@ -83,7 +83,7 @@ export function SummaryPanel({ file, onStateChange }: { file: File; onStateChang
             <label
               key={option.value}
               className={`cursor-pointer rounded-lg border p-3 text-sm transition-colors has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-brand ${
-                strategy === option.value ? "border-brand bg-brand-soft" : "border-border hover:bg-background"
+                strategy === option.value ? "border-brand bg-brand-soft ring-1 ring-brand" : "border-border bg-surface hover:bg-subtle"
               }`}
             >
               <input
@@ -113,7 +113,7 @@ export function SummaryPanel({ file, onStateChange }: { file: File; onStateChang
         type="button"
         onClick={generate}
         disabled={state.kind === "loading" || llmConfigured === false}
-        className="mt-4 rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-not-allowed disabled:opacity-50 dark:text-background"
+        className="mt-4 rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-strong focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-not-allowed disabled:opacity-50"
       >
         {state.kind === "loading" ? "Generating…" : state.kind === "ready" ? "Generate again" : "Generate summary"}
       </button>
@@ -126,7 +126,7 @@ export function SummaryPanel({ file, onStateChange }: { file: File; onStateChang
           </p>
         )}
         {state.kind === "error" && (
-          <p role="alert" className="rounded-lg border border-danger/40 px-3 py-2 text-sm text-danger">
+          <p role="alert" className="rounded-lg border border-danger/30 bg-danger-soft px-3 py-2 text-sm text-danger">
             {state.message}
           </p>
         )}
@@ -150,7 +150,7 @@ function SummaryResult({ response }: { response: SummaryResponse }) {
         <button
           type="button"
           onClick={() => setRevealed(true)}
-          className="rounded-lg border border-border px-3 py-1.5 text-sm hover:bg-background focus-visible:outline-2 focus-visible:outline-brand"
+          className="rounded-lg border border-border px-3 py-1.5 text-sm hover:bg-subtle focus-visible:outline-2 focus-visible:outline-brand"
         >
           Show the rejected output for review
         </button>
@@ -164,7 +164,7 @@ function SummaryResult({ response }: { response: SummaryResponse }) {
             <h4 className="font-semibold">Your results explained</h4>
             <ul className="mt-3 space-y-3">
               {response.output.test_explanations.map((item, index) => (
-                <li key={`${item.test_name}-${index}`} className="rounded-lg bg-background p-4">
+                <li key={`${item.test_name}-${index}`} className="rounded-lg border border-border bg-subtle p-4">
                   <p className="font-medium">
                     {item.test_name}:{" "}
                     <span className="font-mono">
@@ -219,7 +219,7 @@ function SummaryResult({ response }: { response: SummaryResponse }) {
                 {response.output.evidence_citations.map((citation) => {
                   const passage = passages.get(citation.citation_id);
                   return (
-                    <li key={citation.citation_id} id={`source-${citation.citation_id}`} className="rounded-lg bg-background p-3">
+                    <li key={citation.citation_id} id={`source-${citation.citation_id}`} className="rounded-lg border border-border bg-subtle p-3">
                       <span className="mr-2 rounded bg-brand-soft px-1.5 py-0.5 font-mono text-xs text-brand-strong">
                         {citation.citation_id}
                       </span>
@@ -284,7 +284,7 @@ function ListBlock({ title, children }: { title: string; children: React.ReactNo
 
 const BANNER = {
   passed: {
-    className: "border-brand/40 bg-brand-soft text-brand-strong",
+    className: "border-success/30 bg-success-soft text-success",
     title: "Automated checks passed",
   },
   passed_with_warnings: {
@@ -292,7 +292,7 @@ const BANNER = {
     title: "Automated checks passed with warnings",
   },
   failed: {
-    className: "border-danger/50 bg-danger/10 text-danger",
+    className: "border-danger/30 bg-danger-soft text-danger",
     title: "This summary failed safety checks and is hidden",
   },
 } as const;

@@ -12,6 +12,7 @@ router = APIRouter(prefix="/samples", tags=["samples"])
 SAMPLE_INFO: dict[str, tuple[str, str]] = {
     "metabolic_abnormal": ("Metabolic panel (abnormal)", "Flagged and unflagged values outside the printed ranges."),
     "cbc_normal": ("Blood count (in range)", "All values inside the printed ranges."),
+    "columnar_lab": ("Column layout (ranges below rows)", "Lab-style table with a method column and age-based ranges."),
     "missing_ranges": ("Missing ranges", "Rows without a reference range or unit, and a value given as a limit."),
     "conflicting_values": ("Conflicting values", "A test reported twice and a flag that contradicts its range."),
     "prompt_injection": ("Hidden instructions", "Comment lines that try to instruct the AI; treated as data."),

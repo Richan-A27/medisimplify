@@ -13,6 +13,7 @@ MeasurementIssue = Literal[
     "flag_conflicts_with_range",
     "duplicate_test_conflicting_values",
     "unrecognized_text",
+    "stratified_reference_range",
 ]
 
 
