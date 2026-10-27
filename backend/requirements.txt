@@ -1,0 +1,14 @@
+# Runtime dependencies (Python 3.11).
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.16.1
+python-multipart==0.0.32
+# PyMuPDF is AGPL-3.0 licensed; fine for this open academic project, see README before reuse.
+pymupdf==2.0
+# Retrieval-augmented generation (local embeddings + vector store)
+sentence-transformers==6.2.0
+torch==2.14.1
+chromadb==1.5.9
+beautifulsoup4==4.15.0
+google-genai==2.33.0

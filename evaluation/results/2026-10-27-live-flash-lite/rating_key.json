@@ -1,0 +1,110 @@
+{
+ "item-001": {
+  "strategy": "few_shot",
+  "case_id": "cbc_normal"
+ },
+ "item-002": {
+  "strategy": "zero_shot",
+  "case_id": "unsupported_tests"
+ },
+ "item-003": {
+  "strategy": "rag",
+  "case_id": "conflicting_values"
+ },
+ "item-004": {
+  "strategy": "zero_shot",
+  "case_id": "renal_panel"
+ },
+ "item-005": {
+  "strategy": "zero_shot",
+  "case_id": "cbc_abnormal"
+ },
+ "item-006": {
+  "strategy": "rag",
+  "case_id": "cbc_abnormal"
+ },
+ "item-007": {
+  "strategy": "few_shot",
+  "case_id": "unsupported_tests"
+ },
+ "item-008": {
+  "strategy": "rag",
+  "case_id": "cbc_normal"
+ },
+ "item-009": {
+  "strategy": "rag",
+  "case_id": "renal_panel"
+ },
+ "item-010": {
+  "strategy": "rag",
+  "case_id": "metabolic_abnormal"
+ },
+ "item-011": {
+  "strategy": "few_shot",
+  "case_id": "prompt_injection"
+ },
+ "item-012": {
+  "strategy": "rag",
+  "case_id": "lipid_thyroid"
+ },
+ "item-013": {
+  "strategy": "few_shot",
+  "case_id": "lipid_thyroid"
+ },
+ "item-014": {
+  "strategy": "rag",
+  "case_id": "unsupported_tests"
+ },
+ "item-015": {
+  "strategy": "zero_shot",
+  "case_id": "cbc_normal"
+ },
+ "item-016": {
+  "strategy": "zero_shot",
+  "case_id": "lipid_thyroid"
+ },
+ "item-017": {
+  "strategy": "few_shot",
+  "case_id": "cbc_abnormal"
+ },
+ "item-018": {
+  "strategy": "rag",
+  "case_id": "prompt_injection"
+ },
+ "item-019": {
+  "strategy": "few_shot",
+  "case_id": "missing_ranges"
+ },
+ "item-020": {
+  "strategy": "zero_shot",
+  "case_id": "conflicting_values"
+ },
+ "item-021": {
+  "strategy": "few_shot",
+  "case_id": "renal_panel"
+ },
+ "item-022": {
+  "strategy": "zero_shot",
+  "case_id": "missing_ranges"
+ },
+ "item-023": {
+  "strategy": "zero_shot",
+  "case_id": "metabolic_abnormal"
+ },
+ "item-024": {
+  "strategy": "rag",
+  "case_id": "missing_ranges"
+ },
+ "item-025": {
+  "strategy": "few_shot",
+  "case_id": "conflicting_values"
+ },
+ "item-026": {
+  "strategy": "zero_shot",
+  "case_id": "prompt_injection"
+ },
+ "item-027": {
+  "strategy": "few_shot",
+  "case_id": "metabolic_abnormal"
+ }
+}

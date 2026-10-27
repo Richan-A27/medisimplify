@@ -1,0 +1,11 @@
+{
+ "text": "{\n \"summary\": \"Your report lists three tests. TSH is 2.1 mIU/L, but no reference range is printed. Vitamin B12 is 450 with no unit printed, and it is inside the 200 - 900 range. CRP is <0.5 mg/L, which cannot be directly compared because the value is given as a bound.\",\n \"test_explanations\": [\n  {\n   \"test_name\": \"TSH\",\n   \"reported_value\": \"2.1\",\n   \"unit\": \"mIU/L\",\n   \"reference_range\": null,\n   \"explanation\": \"Your TSH result is 2.1 mIU/L. No reference range was provided on the report for this test.\",\n   \"citation_ids\": []\n  },\n  {\n   \"test_name\": \"Vitamin B12\",\n   \"reported_value\": \"450\",\n   \"unit\": null,\n   \"reference_range\": \"200 - 900\",\n   \"explanation\": \"Your Vitamin B12 result is 450. This is inside the report's range of 200 - 900. No unit of measurement is printed for this test.\",\n   \"citation_ids\": []\n  },\n  {\n   \"test_name\": \"CRP\",\n   \"reported_value\": \"<0.5\",\n   \"unit\": \"mg/L\",\n   \"reference_range\": \"<5.0\",\n   \"explanation\": \"Your CRP result is <0.5 mg/L. The report range is <5.0 mg/L. This value is given as a boundary rather than a fixed number.\",\n   \"citation_ids\": []\n  }\n ],\n \"reported_abnormalities\": [],\n \"evidence_citations\": [],\n \"uncertainties\": [\n  \"TSH is missing a reference range.\",\n  \"Vitamin B12 is missing its unit of measurement.\",\n  \"CRP value is expressed as a bound (<0.5), which makes comparison uncertain.\",\n  \"No reference information was provided, so this summary does not explain what each test measures.\"\n ],\n \"questions_for_doctor\": [\n  \"What is the reference range for my TSH result?\",\n  \"What unit is used for my Vitamin B12 test?\",\n  \"What does my CRP result of less than 0.5 mg/L mean for me?\"\n ],\n \"safety_notice\": \"This explanation is for education only; please discuss your results with a healthcare professional.\"\n}",
+ "model": "gemini-3.5-flash-lite",
+ "usage": {
+  "prompt_tokens": 2354,
+  "output_tokens": 572,
+  "total_tokens": 2926
+ },
+ "latency_ms": 4437,
+ "prompt_sha256": "bfdef7b5a589a8202386fa0cdbf2bbf1e504b9d529baf79d953d2145181259b0"
+}

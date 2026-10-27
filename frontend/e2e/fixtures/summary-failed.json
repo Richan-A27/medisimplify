@@ -1,0 +1,438 @@
+{
+ "strategy": "rag",
+ "model": "scripted-test-model",
+ "prompt_version": "2026-10-27.1",
+ "prompt_sha256": "20d1b6005284d7c812a6add3e63f34959f26c3aac67ec3f72a11d1937742a480",
+ "output": {
+  "summary": "Your report lists several tests. Some may be outside the ranges printed on the report. Your results are normal and there is nothing to worry about.",
+  "test_explanations": [
+   {
+    "test_name": "Glucose, Fasting",
+    "reported_value": "999",
+    "unit": "mg/dL",
+    "reference_range": "70 - 99",
+    "explanation": "Your result is 128 mg/dL. It is above the report's range of 70 - 99.",
+    "citation_ids": [
+     "E1"
+    ]
+   },
+   {
+    "test_name": "LDL Cholesterol",
+    "reported_value": "162",
+    "unit": "mg/dL",
+    "reference_range": "<100",
+    "explanation": "Your result is 162 mg/dL. It is above the report's range of <100.",
+    "citation_ids": []
+   },
+   {
+    "test_name": "HDL Cholesterol",
+    "reported_value": "38",
+    "unit": "mg/dL",
+    "reference_range": ">40",
+    "explanation": "Your result is 38 mg/dL. It is below the report's range of >40.",
+    "citation_ids": []
+   },
+   {
+    "test_name": "Potassium",
+    "reported_value": "3.2",
+    "unit": "mmol/L",
+    "reference_range": "3.5 - 5.1",
+    "explanation": "Your result is 3.2 mmol/L. It is below the report's range of 3.5 - 5.1.",
+    "citation_ids": [
+     "E8"
+    ]
+   },
+   {
+    "test_name": "Sodium",
+    "reported_value": "140",
+    "unit": "mmol/L",
+    "reference_range": "136 - 145",
+    "explanation": "Your result is 140 mmol/L. It is inside the report's range of 136 - 145.",
+    "citation_ids": [
+     "E11"
+    ]
+   },
+   {
+    "test_name": "HbA1c",
+    "reported_value": "6.1",
+    "unit": "%",
+    "reference_range": "4.0 - 5.6",
+    "explanation": "Your result is 6.1 %. It is above the report's range of 4.0 - 5.6.",
+    "citation_ids": [
+     "E14"
+    ]
+   }
+  ],
+  "reported_abnormalities": [
+   {
+    "test_name": "Glucose, Fasting",
+    "basis": "report_flag",
+    "description": "See the report."
+   },
+   {
+    "test_name": "LDL Cholesterol",
+    "basis": "range_comparison",
+    "description": "See the report."
+   },
+   {
+    "test_name": "HDL Cholesterol",
+    "basis": "report_flag",
+    "description": "See the report."
+   },
+   {
+    "test_name": "Potassium",
+    "basis": "report_flag",
+    "description": "See the report."
+   },
+   {
+    "test_name": "HbA1c",
+    "basis": "range_comparison",
+    "description": "See the report."
+   }
+  ],
+  "evidence_citations": [
+   {
+    "citation_id": "E1",
+    "supports": "Background about the test."
+   },
+   {
+    "citation_id": "E11",
+    "supports": "Background about the test."
+   },
+   {
+    "citation_id": "E14",
+    "supports": "Background about the test."
+   },
+   {
+    "citation_id": "E8",
+    "supports": "Background about the test."
+   }
+  ],
+  "uncertainties": [
+   "This summary is based only on the values printed on the report."
+  ],
+  "questions_for_doctor": [
+   "What do these results mean for me?",
+   "Do I need follow-up tests?"
+  ],
+  "safety_notice": "This is educational only; discuss your results with a healthcare professional."
+ },
+ "validation": {
+  "status": "failed",
+  "issues": [
+   {
+    "code": "value_mismatch",
+    "severity": "error",
+    "message": "Glucose, Fasting: value '999' differs from the report.",
+    "location": "test_explanations[0]"
+   },
+   {
+    "code": "false_reassurance",
+    "severity": "error",
+    "message": "Claims results are normal or healthy. Found: \"Your results are normal\".",
+    "location": "summary"
+   }
+  ],
+  "checks_run": [
+   "test_coverage",
+   "value_preservation",
+   "citation_validity",
+   "citation_relevance",
+   "evidence_support",
+   "number_grounding",
+   "abnormality_consistency",
+   "safety_language",
+   "required_fields"
+  ],
+  "note": "Automated checks compare the output with the report and the retrieved sources. They reduce risk but do not guarantee medical accuracy."
+ },
+ "measurements": [
+  {
+   "test_name": "Glucose, Fasting",
+   "value": "128",
+   "value_numeric": 128.0,
+   "unit": "mg/dL",
+   "reference_range": "70 - 99",
+   "reported_flag": "H",
+   "flag_meaning": "high",
+   "range_comparison": "above_range",
+   "source_status": "complete",
+   "issues": [],
+   "page_number": 1,
+   "source_line": "Glucose, Fasting 128 H mg/dL 70 - 99"
+  },
+  {
+   "test_name": "LDL Cholesterol",
+   "value": "162",
+   "value_numeric": 162.0,
+   "unit": "mg/dL",
+   "reference_range": "<100",
+   "reported_flag": null,
+   "flag_meaning": null,
+   "range_comparison": "above_range",
+   "source_status": "complete",
+   "issues": [],
+   "page_number": 1,
+   "source_line": "LDL Cholesterol 162 mg/dL <100"
+  },
+  {
+   "test_name": "HDL Cholesterol",
+   "value": "38",
+   "value_numeric": 38.0,
+   "unit": "mg/dL",
+   "reference_range": ">40",
+   "reported_flag": "L",
+   "flag_meaning": "low",
+   "range_comparison": "below_range",
+   "source_status": "complete",
+   "issues": [],
+   "page_number": 1,
+   "source_line": "HDL Cholesterol 38 L mg/dL >40"
+  },
+  {
+   "test_name": "Potassium",
+   "value": "3.2",
+   "value_numeric": 3.2,
+   "unit": "mmol/L",
+   "reference_range": "3.5 - 5.1",
+   "reported_flag": "L",
+   "flag_meaning": "low",
+   "range_comparison": "below_range",
+   "source_status": "complete",
+   "issues": [],
+   "page_number": 1,
+   "source_line": "Potassium 3.2 L mmol/L 3.5 - 5.1"
+  },
+  {
+   "test_name": "Sodium",
+   "value": "140",
+   "value_numeric": 140.0,
+   "unit": "mmol/L",
+   "reference_range": "136 - 145",
+   "reported_flag": null,
+   "flag_meaning": null,
+   "range_comparison": "within_range",
+   "source_status": "complete",
+   "issues": [],
+   "page_number": 1,
+   "source_line": "Sodium 140 mmol/L 136 - 145"
+  },
+  {
+   "test_name": "HbA1c",
+   "value": "6.1",
+   "value_numeric": 6.1,
+   "unit": "%",
+   "reference_range": "4.0 - 5.6",
+   "reported_flag": null,
+   "flag_meaning": null,
+   "range_comparison": "above_range",
+   "source_status": "complete",
+   "issues": [],
+   "page_number": 1,
+   "source_line": "HbA1c 6.1 % 4.0 - 5.6"
+  }
+ ],
+ "document_warnings": [],
+ "evidence": [
+  {
+   "citation_id": "E1",
+   "chunk_id": "medlineplus-blood-glucose-test:4:0",
+   "source_id": "medlineplus-blood-glucose-test",
+   "title": "Blood Glucose Test",
+   "section": "Will I need to do anything to prepare for the test?",
+   "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "If your provider orders a fasting blood glucose test or an oral glucose tolerance test, you will need to fast for at least eight hours before the test.\nIf your glucose test is part of a BMP or CMP test, you may need to fast.\nOther blood glucose tests don't require any special preparations.\nAsk your provider whether you need to fast before your glucose test.",
+   "similarity": 0.6567
+  },
+  {
+   "citation_id": "E2",
+   "chunk_id": "medlineplus-blood-glucose-test:3:1",
+   "source_id": "medlineplus-blood-glucose-test",
+   "title": "Blood Glucose Test",
+   "section": "What happens during a blood glucose test?",
+   "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "- Screen for or monitor prediabetes or diabetes\n- Help diagnose or monitor other conditions that affect blood glucose\n- Check for side effects from medications that can affect blood glucose\n- A random blood glucose test can be done at any time, even after eating.\nIf you have symptoms of diabetes, your provider may use this test first.\nThat's because it can be done right away.\n- A glucose challenge test may be used to screen for gestational diabetes if you are pregnant.\nYou don't need to fast for this test.\nYou will drink a sugary drink that contains glucose.\nA blood sample is taken one hour later.\nIf your blood glucose is too high, you will usually need an oral glucose tolerance test to confirm or rule out gestational diabetes.\n- An oral glucose tolerance test (OGTT) is used to diagnose gestational diabetes.",
+   "similarity": 0.6405
+  },
+  {
+   "citation_id": "E3",
+   "chunk_id": "medlineplus-blood-glucose-test:3:2",
+   "source_id": "medlineplus-blood-glucose-test",
+   "title": "Blood Glucose Test",
+   "section": "What happens during a blood glucose test?",
+   "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "If your blood glucose is too high, you will usually need an oral glucose tolerance test to confirm or rule out gestational diabetes.\n- An oral glucose tolerance test (OGTT) is used to diagnose gestational diabetes.\nIf you aren't pregnant, it's sometimes used to confirm a diagnosis of prediabetes or type 2 diabetes.\nYou will need to fast for this test.\nA blood sample will be taken before you have a sugary drink.\nAfter you have the drink, more blood samples will be taken, usually about every hour for the next 2 or 3 hours.\n- A hemoglobin A1C (HbA1c) test provides information about your average blood glucose levels over the past 3 months.\nYou don't need to fast for this test.\nIt uses one blood sample.\nAn A1C test can diagnose prediabetes and diabetes.\nMost people with diabetes have an A1C test at least twice a year to check how well they are managing their blood glucose levels.",
+   "similarity": 0.6172
+  },
+  {
+   "citation_id": "E4",
+   "chunk_id": "medlineplus-cholesterol-levels:6:0",
+   "source_id": "medlineplus-cholesterol-levels",
+   "title": "Cholesterol Levels",
+   "section": "What do the results mean?",
+   "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "Cholesterol is usually measured in milligrams (mg) of cholesterol per deciliter (dL) of blood.\nThe information below will help you understand what your test results mean.\nIn general, low LDL levels and high HDL cholesterol levels are good for heart health.\nAnyone age 19 or younger:\nMen age 20 or older:\nWomen age 20 or older:\nThe LDL listed on your results may say \"calculated.\" This means that your LDL level is an estimate based on your total cholesterol, HDL, and triglycerides.\nYour LDL level may also be measured \"directly\" from your blood sample.\nEither way, you want your LDL number to be low.\nA healthy cholesterol level for you may depend on your age, family history, lifestyle, and other risk factors for heart disease, such as high triglyceride levels.\nYour provider can explain what's right for you.\nLearn more about laboratory tests, reference ranges, and understanding results.",
+   "similarity": 0.7307
+  },
+  {
+   "citation_id": "E5",
+   "chunk_id": "medlineplus-cholesterol-levels:1:0",
+   "source_id": "medlineplus-cholesterol-levels",
+   "title": "Cholesterol Levels",
+   "section": "What is it used for?",
+   "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "A cholesterol test gives you and your health care provider important information about your risk of developing heart disease.\nIf your test shows you have high cholesterol, you can take steps to lower it.\nThis may decrease your risk of developing heart problems in the future.\nA cholesterol test measures your:\n- LDL level.\nLDL (\"bad\") cholesterol is the main source of blockages in the arteries.\n- HDL level.\nHDL (\"good') cholesterol helps get rid of \"bad\" LDL cholesterol.\nA higher HDL level may help reduce your risk of heart attack or stroke.\n- Total cholesterol.\nThis is a measure of the total amount of cholesterol in your blood.\nIt includes HDL and LDL cholesterol.\n- Triglyceride level.\nTriglycerides are a type of fat found in your blood.\nHigh levels of triglycerides may increase the risk of heart disease, especially in women.\nThere is another type of cholesterol called VLDL (very low-density lipoprotein).",
+   "similarity": 0.7247
+  },
+  {
+   "citation_id": "E6",
+   "chunk_id": "medlineplus-cholesterol-levels:1:1",
+   "source_id": "medlineplus-cholesterol-levels",
+   "title": "Cholesterol Levels",
+   "section": "What is it used for?",
+   "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "- Triglyceride level.\nTriglycerides are a type of fat found in your blood.\nHigh levels of triglycerides may increase the risk of heart disease, especially in women.\nThere is another type of cholesterol called VLDL (very low-density lipoprotein).\nSome people also call VLDL a \"bad\" cholesterol because it contributes to the buildup of plaque in your arteries.\nBut VLDL and LDL are different; VLDL mainly carries triglycerides, and LDL mainly carries cholesterol.\nVLDL isn't usually included in routine cholesterol tests because it's difficult to measure.\nBecause VLDL contains a certain percentage of triglycerides, a lab can use your triglycerides level to estimate your VLDL level.",
+   "similarity": 0.6423
+  },
+  {
+   "citation_id": "E7",
+   "chunk_id": "medlineplus-cholesterol-levels:0:1",
+   "source_id": "medlineplus-cholesterol-levels",
+   "title": "Cholesterol Levels",
+   "section": "What is a cholesterol test?",
+   "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "There are two main types of cholesterol: LDL (low-density lipoprotein), or \"bad\" cholesterol, and HDL (high-density lipoprotein), or \"good\" cholesterol.\nToo much LDL cholesterol in your blood increases your risk for coronary artery disease and other heart diseases.\nHigh LDL levels can cause the buildup of a sticky substance called plaque in your arteries.\nThis buildup of plaque is known as atherosclerosis.\nOver time, plaque can narrow your arteries or fully block them.\nWhen this happens, parts of your body may not get enough blood:\n- If the blood flow to your heart is blocked, it can cause a heart attack.\n- If the blood flow to your brain is blocked, it can cause a stroke.\n- If the blood flow to your arms or legs is blocked, it can cause peripheral artery disease.\nOther names for a cholesterol test: Lipid profile, Lipid panel",
+   "similarity": 0.638
+  },
+  {
+   "citation_id": "E8",
+   "chunk_id": "medlineplus-potassium-blood-test:1:0",
+   "source_id": "medlineplus-potassium-blood-test",
+   "title": "Potassium Blood Test",
+   "section": "What is it used for?",
+   "url": "https://medlineplus.gov/lab-tests/potassium-blood-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "A potassium blood test measures the amount of potassium in your blood.\nThe test is often part of a group of routine blood tests called an electrolyte panel.\nIt may be used to monitor or diagnose conditions related to abnormal potassium levels.\nThese conditions include kidney disease, high blood pressure, and heart disease.",
+   "similarity": 0.7568
+  },
+  {
+   "citation_id": "E9",
+   "chunk_id": "medlineplus-potassium-blood-test:0:0",
+   "source_id": "medlineplus-potassium-blood-test",
+   "title": "Potassium Blood Test",
+   "section": "What is a potassium blood test?",
+   "url": "https://medlineplus.gov/lab-tests/potassium-blood-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "A potassium blood test measures the amount of potassium in your blood.\nPotassium is a type of electrolyte.\nElectrolytes are electrically charged minerals that help control the amount of fluids and the balance of acids and bases (pH balance) in your body.\nThey also help control muscle and nerve activity and perform other important functions.\nYour cells, nerves, heart, and muscles need potassium to work properly.\nYou can usually get most of the potassium that you need from the foods that you eat.\nAlmost all of your body's potassium is inside your cells, but a small amount is in your blood.\nYour kidneys remove potassium in your urine (pee) to help keep the right amount of potassium in your blood.\nPotassium levels that are too high or too low may be a sign of a medical condition and may cause serious health issues.\nOther names: potassium serum, serum potassium, serum electrolytes, K",
+   "similarity": 0.7505
+  },
+  {
+   "citation_id": "E10",
+   "chunk_id": "medlineplus-potassium-blood-test:7:0",
+   "source_id": "medlineplus-potassium-blood-test",
+   "title": "Potassium Blood Test",
+   "section": "Is there anything else I need to know about a potassium blood test?",
+   "url": "https://medlineplus.gov/lab-tests/potassium-blood-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "Repeated clenching and relaxing of your fist just before or during your blood test may temporarily increase the potassium levels in your blood.\nThis may lead to an incorrect result.",
+   "similarity": 0.7296
+  },
+  {
+   "citation_id": "E11",
+   "chunk_id": "medlineplus-sodium-blood-test:7:0",
+   "source_id": "medlineplus-sodium-blood-test",
+   "title": "Sodium Blood Test",
+   "section": "Is there anything else I should know about a sodium blood test?",
+   "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "Sodium levels are often measured with other electrolytes in another test called the anion gap.\nAn anion gap test looks at the difference between negatively charged and positively charged electrolytes.\nThe test checks for acid imbalances and other conditions.",
+   "similarity": 0.741
+  },
+  {
+   "citation_id": "E12",
+   "chunk_id": "medlineplus-sodium-blood-test:6:1",
+   "source_id": "medlineplus-sodium-blood-test",
+   "title": "Sodium Blood Test",
+   "section": "What do the results mean?",
+   "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "- A kidney disease\n- Diabetes insipidus (uncommon)\nSodium blood test results that are lower than normal may be a sign of a condition, such as:\n- A loss of sodium from diarrhea or vomiting\n- A condition that may cause the body to hold onto extra fluid (which dilutes sodium), including: Kidney diseases Cirrhosis of the liver Heart failure Certain brain and lung diseases Certain types of cancer Certain medicines, including many over-the-counter pain relievers and some antidepressants\n- Kidney diseases\n- Cirrhosis of the liver\n- Heart failure\n- Certain brain and lung diseases\n- Certain types of cancer\n- Certain medicines, including many over-the-counter pain relievers and some antidepressants\n- Addison disease\n- Malnutrition\nIf your results are not in the normal range, it doesn't always mean that you have a medical condition that needs treatment.\nCertain medicines, your age, sex, and certain medical conditions can increase or decrease your sodium levels.",
+   "similarity": 0.7358
+  },
+  {
+   "citation_id": "E13",
+   "chunk_id": "medlineplus-sodium-blood-test:1:0",
+   "source_id": "medlineplus-sodium-blood-test",
+   "title": "Sodium Blood Test",
+   "section": "What is it used for?",
+   "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "A sodium blood test is a routine test that may be used to check your general health.\nIt may be used to help find and monitor conditions that affect the balance of fluids, electrolytes, and acidity in your body.\nThe test is often done as part of a group of tests called an electrolyte panel.\nIt may also be part of two other groups of tests called a basic metabolic panel (BMP) and a comprehensive metabolic panel (CMP).",
+   "similarity": 0.7341
+  },
+  {
+   "citation_id": "E14",
+   "chunk_id": "medlineplus-hemoglobin-a1c-hba1c-test:3:0",
+   "source_id": "medlineplus-hemoglobin-a1c-hba1c-test",
+   "title": "Hemoglobin A1C (HbA1c) Test",
+   "section": "What happens during an A1C test?",
+   "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "A health care professional will take a blood sample from a vein in your arm, using a small needle.\nAfter the needle is inserted, a small amount of blood will be collected into a test tube or vial.\nYou may feel a little sting when the needle goes in or out.\nThis usually takes less than five minutes.",
+   "similarity": 0.7997
+  },
+  {
+   "citation_id": "E15",
+   "chunk_id": "medlineplus-hemoglobin-a1c-hba1c-test:1:1",
+   "source_id": "medlineplus-hemoglobin-a1c-hba1c-test",
+   "title": "Hemoglobin A1C (HbA1c) Test",
+   "section": "What is it used for?",
+   "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "Prediabetes means that your blood glucose levels are higher than normal, but not high enough to be diagnosed as diabetes.\nLifestyle changes, such as healthy eating and exercise, may help delay or prevent prediabetes from becoming type 2 diabetes.\nIf you have diabetes or prediabetes, an A1C test can help monitor your condition and check how well you've been able to control your blood glucose levels.\nThe A1C test isn't used to diagnose type 1 diabetes but may be used for monitoring your blood glucose levels.",
+   "similarity": 0.7507
+  },
+  {
+   "citation_id": "E16",
+   "chunk_id": "medlineplus-hemoglobin-test:1:0",
+   "source_id": "medlineplus-hemoglobin-test",
+   "title": "Hemoglobin Test",
+   "section": "What is it used for?",
+   "url": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+   "publisher": "MedlinePlus, National Library of Medicine",
+   "attribution": "Source: MedlinePlus, National Library of Medicine",
+   "text": "A hemoglobin test is a blood test often used to check for anemia, a condition in which your body does not make enough healthy red blood cells.\nIf you have anemia, the cells in your body don't get all the oxygen they need.\nHemoglobin levels are usually measured as part of a complete blood count (CBC).\nA CBC is a group of tests that measure the number and type of cells in your blood.\nA hemoglobin test is not the same as a hemoglobin A1C test.\nThe A1C test is used to check your average blood glucose (blood sugar).",
+   "similarity": 0.7368
+  }
+ ],
+ "unmatched_tests": [],
+ "usage": {
+  "prompt_tokens": 2400,
+  "output_tokens": 650,
+  "total_tokens": 3050
+ },
+ "latency_ms": 4200,
+ "disclaimer": "MediSimplify is an educational prototype. This summary was generated automatically and may contain errors. It is not a diagnosis or medical advice. Discuss your results with a qualified healthcare professional."
+}

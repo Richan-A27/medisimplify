@@ -1,0 +1,11 @@
+{
+ "text": "{\n  \"summary\": \"This laboratory report contains results for TSH, Vitamin B12, and CRP.\",\n  \"test_explanations\": [\n    {\n      \"test_name\": \"TSH\",\n      \"reported_value\": \"2.1\",\n      \"unit\": \"mIU/L\",\n      \"reference_range\": null,\n      \"explanation\": \"No reference information was available for this test.\",\n      \"citation_ids\": []\n    },\n    {\n      \"test_name\": \"Vitamin B12\",\n      \"reported_value\": \"450\",\n      \"unit\": null,\n      \"reference_range\": \"200 - 900\",\n      \"explanation\": \"No reference information was available for this test.\",\n      \"citation_ids\": []\n    },\n    {\n      \"test_name\": \"CRP\",\n      \"reported_value\": \"<0.5\",\n      \"unit\": \"mg/L\",\n      \"reference_range\": \"<5.0\",\n      \"explanation\": \"No reference information was available for this test.\",\n      \"citation_ids\": []\n    }\n  ],\n  \"reported_abnormalities\": [],\n  \"evidence_citations\": [],\n  \"uncertainties\": [\n    \"TSH is missing a reference range.\",\n    \"Vitamin B12 is missing a unit.\",\n    \"CRP value is expressed as a bound.\",\n    \"No reference information was available for TSH.\",\n    \"No reference information was available for Vitamin B12.\",\n    \"No reference information was available for CRP.\"\n  ],\n  \"questions_for_doctor\": [\n    \"What do my TSH, Vitamin B12, and CRP results mean for my health?\",\n    \"Are there any follow-up tests needed based on these laboratory values?\"\n  ],\n  \"safety_notice\": \"This explanation is educational and the reader should discuss the results with a healthcare professional.\"\n}",
+ "model": "gemini-3.5-flash-lite",
+ "usage": {
+  "prompt_tokens": 851,
+  "output_tokens": 437,
+  "total_tokens": 1288
+ },
+ "latency_ms": 22062,
+ "prompt_sha256": "fdfb9a3c888b6469dad9e51dc05f6dd83793f5c1c3136e859932f955c4ed67af"
+}

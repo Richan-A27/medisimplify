@@ -1,0 +1,44 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node / Next.js (also covered by frontend/.gitignore)
+node_modules/
+.next/
+
+# Generated vector index and model caches (rebuild with the ingestion script)
+knowledge_base/index/
+.cache/
+
+# Uploaded reports and private data must never be committed
+uploads/
+private/
+*.local.pdf
+
+# Raw evaluation runs (curated summaries in evaluation/results/ are committed)
+evaluation/results/raw/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Generated synthetic sample PDFs (rebuild with backend/scripts/generate_sample_pdfs.py)
+samples/
+
+# Local tool configuration (machine-specific paths)
+.claude/
+
+# Playwright output
+test-results/
+playwright-report/

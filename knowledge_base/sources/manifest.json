@@ -1,0 +1,146 @@
+{
+  "description": "Approved reference documents. Only sources listed here are ingested.",
+  "license_basis": "MedlinePlus 'Medical test information' is a U.S. federal government work in the public domain: https://medlineplus.gov/about/using/usingcontent/ (checked 2026-10-27).",
+  "sources": [
+    {
+      "id": "medlineplus-how-to-understand-your-lab-results",
+      "url": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-complete-blood-count-cbc",
+      "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-hemoglobin-test",
+      "url": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-hematocrit-test",
+      "url": "https://medlineplus.gov/lab-tests/hematocrit-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-white-blood-count-wbc",
+      "url": "https://medlineplus.gov/lab-tests/white-blood-count-wbc/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-platelet-tests",
+      "url": "https://medlineplus.gov/lab-tests/platelet-tests/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-blood-glucose-test",
+      "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-hemoglobin-a1c-hba1c-test",
+      "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-cholesterol-levels",
+      "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-triglycerides-test",
+      "url": "https://medlineplus.gov/lab-tests/triglycerides-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-potassium-blood-test",
+      "url": "https://medlineplus.gov/lab-tests/potassium-blood-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-sodium-blood-test",
+      "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-electrolyte-panel",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-creatinine-test",
+      "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-basic-metabolic-panel-bmp",
+      "url": "https://medlineplus.gov/lab-tests/basic-metabolic-panel-bmp/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-comprehensive-metabolic-panel-cmp",
+      "url": "https://medlineplus.gov/lab-tests/comprehensive-metabolic-panel-cmp/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-tsh-thyroid-stimulating-hormone-test",
+      "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-vitamin-b-test",
+      "url": "https://medlineplus.gov/lab-tests/vitamin-b-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-c-reactive-protein-crp-test",
+      "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    },
+    {
+      "id": "medlineplus-vitamin-d-test",
+      "url": "https://medlineplus.gov/lab-tests/vitamin-d-test/",
+      "publisher": "MedlinePlus, National Library of Medicine",
+      "license": "Public domain (U.S. federal government work)",
+      "attribution": "Source: MedlinePlus, National Library of Medicine"
+    }
+  ]
+}

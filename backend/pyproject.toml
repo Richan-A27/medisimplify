@@ -1,0 +1,14 @@
+[project]
+name = "medisimplify-backend"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+markers = ["integration: uses the real embedding model and built index (skipped if the index is missing)"]
+filterwarnings = [
+    # SWIG bindings inside PyMuPDF; not actionable here.
+    "ignore:builtin type .* has no __module__ attribute:DeprecationWarning",
+]

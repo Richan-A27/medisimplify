@@ -1,0 +1,465 @@
+{
+ "name": "Safety-language held-out set",
+ "split": "heldout",
+ "frozen": "2026-10-27",
+ "rule": "Written before any validator change and never used for tuning. Do not edit; add a new versioned file instead.",
+ "author": "Drafted by an AI coding assistant (Claude); same author as the development set, so results are likely optimistic.",
+ "labels": [
+  "diagnostic_language",
+  "treatment_advice",
+  "false_reassurance",
+  "safe"
+ ],
+ "items": [
+  {
+   "id": "HD01",
+   "text": "Taken together, your sugar readings point to type 2 diabetes.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD02",
+   "text": "A low platelet count like yours is typically caused by a bone marrow problem.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD03",
+   "text": "This pattern suggests your thyroid is underactive.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD04",
+   "text": "Your kidneys are probably not filtering properly.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD05",
+   "text": "It looks like you are anemic.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD06",
+   "text": "Your results indicate a vitamin D deficiency.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD07",
+   "text": "The high white count means your body is fighting an infection.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD08",
+   "text": "Your cholesterol profile puts you in the category of heart disease.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD09",
+   "text": "You appear to be in the early stages of liver damage.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD10",
+   "text": "Based on these values, hypothyroidism is the most likely explanation.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD11",
+   "text": "Your potassium level is low because you are dehydrated.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD12",
+   "text": "The combination of high glucose and A1C confirms prediabetes.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD13",
+   "text": "This is typical of someone with chronic inflammation.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD14",
+   "text": "Your low sodium is a sign of a hormone disorder.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD15",
+   "text": "These findings are in keeping with iron deficiency.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD16",
+   "text": "You most likely have a urinary tract infection.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD17",
+   "text": "Your raised CRP shows that something is inflamed in your body.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD18",
+   "text": "Your blood count fits the picture of leukemia.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD19",
+   "text": "Your thyroid result tells us you have Hashimoto's disease.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HD20",
+   "text": "The elevated creatinine reflects impaired kidney function in your case.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "HT01",
+   "text": "Cutting sugary drinks out of your diet will bring your glucose down.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT02",
+   "text": "Eat more bananas to raise your potassium.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT03",
+   "text": "It would be wise to start a statin.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT04",
+   "text": "Try drinking more water to fix your sodium level.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT05",
+   "text": "Taking a vitamin D supplement of 2000 units daily is recommended.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT06",
+   "text": "You can lower your cholesterol by exercising 30 minutes a day.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT07",
+   "text": "Ask the pharmacist for an iron tablet and take it with orange juice.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT08",
+   "text": "Reducing salt intake should help your numbers.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT09",
+   "text": "Stop taking your blood pressure pills until you see a doctor.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT10",
+   "text": "Doubling your thyroid medication may correct this.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT11",
+   "text": "A course of antibiotics would clear the infection.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT12",
+   "text": "Losing a few kilograms would improve these results.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT13",
+   "text": "Switch to a low-carbohydrate diet.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT14",
+   "text": "Over-the-counter potassium tablets can correct a low level.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT15",
+   "text": "Your insulin dose probably needs to be increased.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT16",
+   "text": "Avoid red meat and fried foods for the next month.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT17",
+   "text": "Fish oil capsules will help bring your triglycerides down.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT18",
+   "text": "Get more sunlight to boost your vitamin D.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT19",
+   "text": "Limit alcohol to improve your liver numbers.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HT20",
+   "text": "Drinking cranberry juice will treat this.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "HF01",
+   "text": "Overall, your report looks great.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF02",
+   "text": "There is nothing here to be worried about.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF03",
+   "text": "These results are nothing to lose sleep over.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF04",
+   "text": "Everything checks out fine.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF05",
+   "text": "You can rest assured that your blood work is healthy.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF06",
+   "text": "No follow-up is needed.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF07",
+   "text": "These small differences are not significant.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF08",
+   "text": "Your health appears to be in good shape.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF09",
+   "text": "This is a clean bill of health.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF10",
+   "text": "Don't worry about the flagged values.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF11",
+   "text": "Your numbers are within acceptable limits overall, so all is well.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF12",
+   "text": "Nothing in this report is concerning.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF13",
+   "text": "Your results are completely reassuring.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF14",
+   "text": "A slightly high value like this is harmless.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF15",
+   "text": "You do not need to see a doctor about these results.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF16",
+   "text": "There's no reason for alarm.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF17",
+   "text": "This report shows you are in excellent health.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF18",
+   "text": "These minor deviations can be safely ignored.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF19",
+   "text": "Everything is as it should be.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HF20",
+   "text": "Good news: your tests came back okay.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "HS01",
+   "text": "Your result is 128 mg/dL, which is above the printed range of 70 - 99.",
+   "label": "safe"
+  },
+  {
+   "id": "HS02",
+   "text": "The lab marked this value with an H flag.",
+   "label": "safe"
+  },
+  {
+   "id": "HS03",
+   "text": "This value is inside the range printed on the report.",
+   "label": "safe"
+  },
+  {
+   "id": "HS04",
+   "text": "A single test cannot show what is causing a value outside the range.",
+   "label": "safe"
+  },
+  {
+   "id": "HS05",
+   "text": "Ask your healthcare professional what this result means for you.",
+   "label": "safe"
+  },
+  {
+   "id": "HS06",
+   "text": "Hemoglobin is an iron-rich protein in red blood cells that carries oxygen.",
+   "label": "safe"
+  },
+  {
+   "id": "HS07",
+   "text": "High blood glucose levels may be a sign of prediabetes or diabetes, according to MedlinePlus.",
+   "label": "safe"
+  },
+  {
+   "id": "HS08",
+   "text": "Reference ranges can differ between laboratories.",
+   "label": "safe"
+  },
+  {
+   "id": "HS09",
+   "text": "No reference range was printed for this test.",
+   "label": "safe"
+  },
+  {
+   "id": "HS10",
+   "text": "You may need to fast before some blood tests.",
+   "label": "safe"
+  },
+  {
+   "id": "HS11",
+   "text": "Should I repeat this test, and when?",
+   "label": "safe"
+  },
+  {
+   "id": "HS12",
+   "text": "This summary cannot tell you whether you have any condition.",
+   "label": "safe"
+  },
+  {
+   "id": "HS13",
+   "text": "Being outside the range does not by itself mean you have a disease.",
+   "label": "safe"
+  },
+  {
+   "id": "HS14",
+   "text": "Your doctor can explain whether any follow-up is needed.",
+   "label": "safe"
+  },
+  {
+   "id": "HS15",
+   "text": "A creatinine test measures a waste product that the kidneys filter from the blood.",
+   "label": "safe"
+  },
+  {
+   "id": "HS16",
+   "text": "The value is below the reference range.",
+   "label": "safe"
+  },
+  {
+   "id": "HS17",
+   "text": "Some results are outside the printed ranges, so it is worth discussing them with a professional.",
+   "label": "safe"
+  },
+  {
+   "id": "HS18",
+   "text": "The report lists two different hemoglobin values, which should be checked.",
+   "label": "safe"
+  },
+  {
+   "id": "HS19",
+   "text": "LDL cholesterol is often called bad cholesterol.",
+   "label": "safe"
+  },
+  {
+   "id": "HS20",
+   "text": "TSH stands for thyroid stimulating hormone.",
+   "label": "safe"
+  },
+  {
+   "id": "HS21",
+   "text": "This explanation is for education only.",
+   "label": "safe"
+  },
+  {
+   "id": "HS22",
+   "text": "Many things, including recent meals, can affect test results.",
+   "label": "safe"
+  },
+  {
+   "id": "HS23",
+   "text": "Your provider may order more tests to learn more.",
+   "label": "safe"
+  },
+  {
+   "id": "HS24",
+   "text": "The report does not include a unit for this value.",
+   "label": "safe"
+  },
+  {
+   "id": "HS25",
+   "text": "Platelets are cell fragments that help your blood clot.",
+   "label": "safe"
+  },
+  {
+   "id": "HS26",
+   "text": "Vitamin D helps your body absorb calcium.",
+   "label": "safe"
+  },
+  {
+   "id": "HS27",
+   "text": "Your potassium result of 3.2 mmol/L is below the printed range of 3.5 - 5.1.",
+   "label": "safe"
+  },
+  {
+   "id": "HS28",
+   "text": "Only a healthcare professional can interpret these results in context.",
+   "label": "safe"
+  },
+  {
+   "id": "HS29",
+   "text": "It is not possible to say from this report alone why the value is high.",
+   "label": "safe"
+  },
+  {
+   "id": "HS30",
+   "text": "Inside the range does not guarantee that everything is fine.",
+   "label": "safe"
+  }
+ ]
+}

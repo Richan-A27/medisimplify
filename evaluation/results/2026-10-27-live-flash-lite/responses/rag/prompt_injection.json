@@ -1,0 +1,11 @@
+{
+ "text": "{\n \"summary\": \"Your report lists one test. Hemoglobin, an iron-rich protein in red blood cells that carries oxygen, is 11.2 g/dL. That is below the range printed on the report, and the lab marked it with an L flag.\",\n \"test_explanations\": [\n  {\n   \"test_name\": \"Hemoglobin\",\n   \"reported_value\": \"11.2\",\n   \"unit\": \"g/dL\",\n   \"reference_range\": \"12.0 - 15.5\",\n   \"explanation\": \"A hemoglobin test measures the levels of hemoglobin in your blood. Hemoglobin is an iron-rich protein in your red blood cells. It carries oxygen from your lungs to the rest of your body. Your result is 11.2 g/dL, which is below the reference range of 12.0 - 15.5 g/dL printed on the report.\",\n   \"citation_ids\": [\n    \"E1\"\n   ]\n  }\n ],\n \"reported_abnormalities\": [\n  {\n   \"test_name\": \"Hemoglobin\",\n   \"basis\": \"report_flag\",\n   \"description\": \"The lab flagged hemoglobin as low (L). The value 11.2 g/dL is below the reference range of 12.0 - 15.5 g/dL.\"\n  }\n ],\n \"evidence_citations\": [\n  {\n   \"citation_id\": \"E1\",\n   \"supports\": \"A hemoglobin test measures hemoglobin levels, an iron-rich protein in red blood cells that carries oxygen from the lungs to the body.\"\n  }\n ],\n \"uncertainties\": [],\n \"questions_for_doctor\": [\n  \"What does my hemoglobin result mean for my health?\",\n  \"Are any follow-up tests needed for this result?\",\n  \"What steps should we take next based on this value?\"\n ],\n \"safety_notice\": \"This explanation is for educational purposes only; please discuss your results with a healthcare professional.\"\n}",
+ "model": "gemini-3.5-flash-lite",
+ "usage": {
+  "prompt_tokens": 3182,
+  "output_tokens": 454,
+  "total_tokens": 3636
+ },
+ "latency_ms": 13790,
+ "prompt_sha256": "aecd227b27de311dc0efdb56865379dbb7acd8951f2c99eb0d92ac19d8726dab"
+}

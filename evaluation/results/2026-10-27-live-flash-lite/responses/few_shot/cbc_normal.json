@@ -1,0 +1,11 @@
+{
+ "text": "{\n  \"summary\": \"Your report lists four tests: Hemoglobin, Hematocrit, WBC, and Platelets. Every value is inside the range printed on the report.\",\n  \"test_explanations\": [\n    {\n      \"test_name\": \"Hemoglobin\",\n      \"reported_value\": \"13.8\",\n      \"unit\": \"g/dL\",\n      \"reference_range\": \"12.0 - 15.5\",\n      \"explanation\": \"Your result is 13.8 g/dL. This is inside the report's range of 12.0 - 15.5 g/dL.\",\n      \"citation_ids\": []\n    },\n    {\n      \"test_name\": \"Hematocrit\",\n      \"reported_value\": \"41.2\",\n      \"unit\": \"%\",\n      \"reference_range\": \"36.0 - 46.0\",\n      \"explanation\": \"Your result is 41.2 %. This is inside the report's range of 36.0 - 46.0 %.\",\n      \"citation_ids\": []\n    },\n    {\n      \"test_name\": \"WBC\",\n      \"reported_value\": \"6.4\",\n      \"unit\": \"x10^3/uL\",\n      \"reference_range\": \"4.0 - 10.5\",\n      \"explanation\": \"Your result is 6.4 x10^3/uL. This is inside the report's range of 4.0 - 10.5 x10^3/uL.\",\n      \"citation_ids\": []\n    },\n    {\n      \"test_name\": \"Platelets\",\n      \"reported_value\": \"250\",\n      \"unit\": \"x10^3/uL\",\n      \"reference_range\": \"150 - 400\",\n      \"explanation\": \"Your result is 250 x10^3/uL. This is inside the report's range of 150 - 400 x10^3/uL.\",\n      \"citation_ids\": []\n    }\n  ],\n  \"reported_abnormalities\": [],\n  \"evidence_citations\": [],\n  \"uncertainties\": [\n    \"No reference information was provided, so this summary does not explain what each test measures.\"\n  ],\n  \"questions_for_doctor\": [\n    \"Are there any specific questions I should ask about these results?\",\n    \"Do these results meet all the goals for my care right now?\"\n  ],\n  \"safety_notice\": \"This explanation is educational and the reader should discuss the results with a healthcare professional.\"\n}",
+ "model": "gemini-3.5-flash-lite",
+ "usage": {
+  "prompt_tokens": 2440,
+  "output_tokens": 615,
+  "total_tokens": 3055
+ },
+ "latency_ms": 8562,
+ "prompt_sha256": "914c6b75ebe7222683b3c26540d0b06fdf5939e57df75ae42778a4a99cd8caf4"
+}

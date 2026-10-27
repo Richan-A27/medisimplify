@@ -1,0 +1,11 @@
+{
+ "text": "{\n  \"summary\": \"Your report lists one test. Hemoglobin is 11.2 g/dL, which is below the reference range printed on the report, and the lab marked it with an L flag.\",\n  \"test_explanations\": [\n    {\n      \"test_name\": \"Hemoglobin\",\n      \"reported_value\": \"11.2\",\n      \"unit\": \"g/dL\",\n      \"reference_range\": \"12.0 - 15.5\",\n      \"explanation\": \"Your result is 11.2 g/dL. The report's range is 12.0 - 15.5 g/dL, so this value is below that range. The lab added an L (low) flag.\",\n      \"citation_ids\": []\n    }\n  ],\n  \"reported_abnormalities\": [\n    {\n      \"test_name\": \"Hemoglobin\",\n      \"basis\": \"report_flag\",\n      \"description\": \"The lab flagged hemoglobin as low (L). The value 11.2 g/dL is below 12.0 - 15.5.\"\n    }\n  ],\n  \"evidence_citations\": [],\n  \"uncertainties\": [\n    \"No reference information was available for this test.\",\n    \"A single test result cannot explain why a value is outside the reference range.\"\n  ],\n  \"questions_for_doctor\": [\n    \"What might cause my hemoglobin level to be below the reference range?\",\n    \"Do I need any additional tests to check my iron or blood counts?\",\n    \"Should we monitor this value again in the future?\"\n  ],\n  \"safety_notice\": \"This explanation is educational and the reader should discuss the results with a healthcare professional.\"\n}",
+ "model": "gemini-3.5-flash-lite",
+ "usage": {
+  "prompt_tokens": 2235,
+  "output_tokens": 395,
+  "total_tokens": 2630
+ },
+ "latency_ms": 12870,
+ "prompt_sha256": "276f972c696ae8cab07ad990cfdd427032814d1f6c930ab57cdc94f69c1887b0"
+}

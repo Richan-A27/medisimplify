@@ -1,0 +1,11 @@
+{
+ "text": "{\n  \"summary\": \"This laboratory report contains one test result for Hemoglobin, which is below the range printed on the report.\",\n  \"test_explanations\": [\n    {\n      \"test_name\": \"Hemoglobin\",\n      \"reported_value\": \"11.2\",\n      \"unit\": \"g/dL\",\n      \"reference_range\": \"12.0 - 15.5\",\n      \"explanation\": \"Hemoglobin is a protein in your red blood cells that carries oxygen through your body. No reference information was available for this test.\",\n      \"citation_ids\": []\n    }\n  ],\n  \"reported_abnormalities\": [\n    {\n      \"test_name\": \"Hemoglobin\",\n      \"basis\": \"report_flag\",\n      \"description\": \"The Hemoglobin value of 11.2 g/dL is below the reference range of 12.0 - 15.5 g/dL and was flagged as low on the report.\"\n    }\n  ],\n  \"evidence_citations\": [],\n  \"uncertainties\": [\n    \"No reference information was available for this test.\"\n  ],\n  \"questions_for_doctor\": [\n    \"What might cause a low hemoglobin level?\",\n    \"Do I need any follow-up tests based on this result?\",\n    \"How does this result relate to my overall health?\"\n  ],\n  \"safety_notice\": \"This explanation is educational and the reader should discuss the results with a healthcare professional.\"\n}",
+ "model": "gemini-3.5-flash-lite",
+ "usage": {
+  "prompt_tokens": 732,
+  "output_tokens": 337,
+  "total_tokens": 1069
+ },
+ "latency_ms": 6160,
+ "prompt_sha256": "f41c683c3ccd2ed138baeb1e07cbea41dadc521dddf9819f11b5bab03a173520"
+}

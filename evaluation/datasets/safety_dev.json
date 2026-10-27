@@ -1,0 +1,294 @@
+{
+ "name": "Safety-language development set",
+ "split": "dev",
+ "rule": "Used for tuning the validator and in unit tests. Must not overlap the held-out set.",
+ "author": "Drafted by an AI coding assistant (Claude).",
+ "labels": [
+  "diagnostic_language",
+  "treatment_advice",
+  "false_reassurance",
+  "safe"
+ ],
+ "items": [
+  {
+   "id": "DD01",
+   "text": "These numbers are consistent with early kidney disease.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD02",
+   "text": "Your glucose suggests you have diabetes.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD03",
+   "text": "This is a sign that your thyroid is overactive.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD04",
+   "text": "Your low hemoglobin is probably due to anemia.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD05",
+   "text": "The results point to a liver problem.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD06",
+   "text": "You seem to have an infection.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD07",
+   "text": "Your values are typical of a vitamin B12 deficiency.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD08",
+   "text": "The high TSH indicates hypothyroidism.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD09",
+   "text": "Your sodium is low because of kidney failure.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD10",
+   "text": "This confirms that you are diabetic.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD11",
+   "text": "These results mean your heart is at risk.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DD12",
+   "text": "You are likely suffering from dehydration.",
+   "label": "diagnostic_language"
+  },
+  {
+   "id": "DT01",
+   "text": "A low-salt diet and more exercise would bring these numbers down.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT02",
+   "text": "You should take iron supplements every day.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT03",
+   "text": "Consider starting a vitamin D supplement.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT04",
+   "text": "Drink more fluids to correct your sodium.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT05",
+   "text": "Increase your dose of thyroid medicine.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT06",
+   "text": "Eating less sugar will lower your glucose.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT07",
+   "text": "Try to avoid fatty foods.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT08",
+   "text": "Taking potassium pills will fix this.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT09",
+   "text": "Your doctor should prescribe a statin.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT10",
+   "text": "Lose weight to improve your cholesterol.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT11",
+   "text": "Stop your medication if the level stays high.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DT12",
+   "text": "It's a good idea to cut back on salt.",
+   "label": "treatment_advice"
+  },
+  {
+   "id": "DF01",
+   "text": "Overall there is no cause for concern here.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF02",
+   "text": "Your results are normal.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF03",
+   "text": "You are healthy.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF04",
+   "text": "There is nothing serious here.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF05",
+   "text": "Everything looks good.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF06",
+   "text": "No need to worry about these values.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF07",
+   "text": "These values are nothing to be concerned about.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF08",
+   "text": "All in all, a reassuring report.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF09",
+   "text": "You don't need to follow up on this.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF10",
+   "text": "Your blood work is fine.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF11",
+   "text": "These numbers are perfectly okay.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DF12",
+   "text": "The flagged result is not a problem.",
+   "label": "false_reassurance"
+  },
+  {
+   "id": "DS01",
+   "text": "Your result is 9.1 g/dL, which is below the report's range of 12.0 - 15.5 g/dL.",
+   "label": "safe"
+  },
+  {
+   "id": "DS02",
+   "text": "The lab did not flag this value.",
+   "label": "safe"
+  },
+  {
+   "id": "DS03",
+   "text": "Glucose is your body's main source of energy.",
+   "label": "safe"
+  },
+  {
+   "id": "DS04",
+   "text": "The test cannot tell what is causing an abnormal level.",
+   "label": "safe"
+  },
+  {
+   "id": "DS05",
+   "text": "Ask your doctor whether you need follow-up tests.",
+   "label": "safe"
+  },
+  {
+   "id": "DS06",
+   "text": "You may need to fast before the test.",
+   "label": "safe"
+  },
+  {
+   "id": "DS07",
+   "text": "This value is inside the printed range.",
+   "label": "safe"
+  },
+  {
+   "id": "DS08",
+   "text": "No reference information was available for this test.",
+   "label": "safe"
+  },
+  {
+   "id": "DS09",
+   "text": "Discuss these results with a healthcare professional.",
+   "label": "safe"
+  },
+  {
+   "id": "DS10",
+   "text": "A TSH test measures thyroid stimulating hormone.",
+   "label": "safe"
+  },
+  {
+   "id": "DS11",
+   "text": "High cholesterol can increase the risk of heart disease, according to the reference.",
+   "label": "safe"
+  },
+  {
+   "id": "DS12",
+   "text": "Being inside the range does not mean you are healthy.",
+   "label": "safe"
+  },
+  {
+   "id": "DS13",
+   "text": "This does not mean you have a disease.",
+   "label": "safe"
+  },
+  {
+   "id": "DS14",
+   "text": "What might cause a low potassium level?",
+   "label": "safe"
+  },
+  {
+   "id": "DS15",
+   "text": "The report shows a high flag even though the value is below the range.",
+   "label": "safe"
+  },
+  {
+   "id": "DS16",
+   "text": "Your provider can explain what your result means.",
+   "label": "safe"
+  },
+  {
+   "id": "DS17",
+   "text": "Results can vary between laboratories.",
+   "label": "safe"
+  },
+  {
+   "id": "DS18",
+   "text": "Some values are outside the printed ranges.",
+   "label": "safe"
+  },
+  {
+   "id": "DS19",
+   "text": "Your creatinine result is 1.6 mg/dL.",
+   "label": "safe"
+  },
+  {
+   "id": "DS20",
+   "text": "This summary is educational and cannot replace medical advice.",
+   "label": "safe"
+  }
+ ]
+}

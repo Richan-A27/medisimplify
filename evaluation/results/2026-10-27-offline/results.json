@@ -1,0 +1,943 @@
+{
+ "created": "2026-10-27T11:29:38+00:00",
+ "dataset": {
+  "name": "MediSimplify synthetic evaluation set",
+  "version": "1.0",
+  "cases": 12,
+  "annotation": {
+   "method": "Gold annotations were written by hand from each report's lines, following evaluation/datasets/README.md.",
+   "annotator": "Drafted by an AI coding assistant (Claude) for the project author",
+   "review_status": "pending independent human review"
+  }
+ },
+ "config": {
+  "stages": [
+   "extraction",
+   "retrieval",
+   "validator",
+   "llm"
+  ],
+  "strategies": [
+   "zero_shot",
+   "few_shot",
+   "rag"
+  ],
+  "prompt_version": "2026-10-27.1",
+  "llm_model": null,
+  "temperature": 0.2,
+  "seed": 42,
+  "max_output_tokens": 8192,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rag_top_k": 3,
+  "rag_min_similarity": 0.6
+ },
+ "notes": [],
+ "extraction": {
+  "aggregate": {
+   "measurement_micro": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "gold_measurements": 34,
+   "failure_cases": 2,
+   "failure_cases_with_expected_error": 2,
+   "unexpected_errors": 0
+  },
+  "per_case": {
+   "cbc_normal": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 4,
+    "gold_count": 4,
+    "predicted_count": 4,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "metabolic_abnormal": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 6,
+    "gold_count": 6,
+    "predicted_count": 6,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "missing_ranges": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 3,
+    "gold_count": 3,
+    "predicted_count": 3,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "conflicting_values": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 3,
+    "gold_count": 3,
+    "predicted_count": 3,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "expected_warnings_present": true
+   },
+   "prompt_injection": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 1,
+    "gold_count": 1,
+    "predicted_count": 1,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "unsupported_tests": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 4,
+    "gold_count": 4,
+    "predicted_count": 4,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "lipid_thyroid": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 5,
+    "gold_count": 5,
+    "predicted_count": 5,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "cbc_abnormal": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 4,
+    "gold_count": 4,
+    "predicted_count": 4,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "renal_panel": {
+    "measurements": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "exact_matches": 4,
+    "gold_count": 4,
+    "predicted_count": 4,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "no_results": {
+    "measurements": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "exact_matches": 0,
+    "gold_count": 0,
+    "predicted_count": 0,
+    "missed": [],
+    "abnormal_candidates": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "ambiguity": {
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "expected_warnings_present": true
+   },
+   "scanned_report": {
+    "error": "no_extractable_text",
+    "expected_error": "no_extractable_text",
+    "error_correct": true
+   },
+   "encrypted_report": {
+    "error": "encrypted_pdf",
+    "expected_error": "encrypted_pdf",
+    "error_correct": true
+   }
+  }
+ },
+ "retrieval": {
+  "aggregate": {
+   "covered_tests": 30,
+   "top1_accuracy": 0.9666666666666667,
+   "hit_rate_at_k": 0.9666666666666667,
+   "uncovered_tests": 3,
+   "abstention_rate": 1.0,
+   "min_similarity": 0.6,
+   "top_k": 3,
+   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "per_case": {
+   "cbc_normal": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 4,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "Hemoglobin",
+      "expected": [
+       "medlineplus-hemoglobin-test"
+      ],
+      "retrieved": [
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Hematocrit",
+      "expected": [
+       "medlineplus-hematocrit-test"
+      ],
+      "retrieved": [
+       "medlineplus-hematocrit-test",
+       "medlineplus-hematocrit-test",
+       "medlineplus-hematocrit-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "WBC",
+      "expected": [
+       "medlineplus-white-blood-count-wbc"
+      ],
+      "retrieved": [
+       "medlineplus-white-blood-count-wbc",
+       "medlineplus-white-blood-count-wbc",
+       "medlineplus-white-blood-count-wbc"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Platelets",
+      "expected": [
+       "medlineplus-platelet-tests"
+      ],
+      "retrieved": [
+       "medlineplus-platelet-tests",
+       "medlineplus-platelet-tests",
+       "medlineplus-platelet-tests"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "metabolic_abnormal": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 6,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "Glucose, Fasting",
+      "expected": [
+       "medlineplus-blood-glucose-test"
+      ],
+      "retrieved": [
+       "medlineplus-blood-glucose-test",
+       "medlineplus-blood-glucose-test",
+       "medlineplus-blood-glucose-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "LDL Cholesterol",
+      "expected": [
+       "medlineplus-cholesterol-levels"
+      ],
+      "retrieved": [
+       "medlineplus-cholesterol-levels",
+       "medlineplus-cholesterol-levels",
+       "medlineplus-cholesterol-levels"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "HDL Cholesterol",
+      "expected": [
+       "medlineplus-cholesterol-levels"
+      ],
+      "retrieved": [
+       "medlineplus-cholesterol-levels",
+       "medlineplus-cholesterol-levels",
+       "medlineplus-cholesterol-levels"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Potassium",
+      "expected": [
+       "medlineplus-potassium-blood-test",
+       "medlineplus-electrolyte-panel"
+      ],
+      "retrieved": [
+       "medlineplus-potassium-blood-test",
+       "medlineplus-potassium-blood-test",
+       "medlineplus-potassium-blood-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Sodium",
+      "expected": [
+       "medlineplus-sodium-blood-test",
+       "medlineplus-electrolyte-panel"
+      ],
+      "retrieved": [
+       "medlineplus-sodium-blood-test",
+       "medlineplus-sodium-blood-test",
+       "medlineplus-sodium-blood-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "HbA1c",
+      "expected": [
+       "medlineplus-hemoglobin-a1c-hba1c-test"
+      ],
+      "retrieved": [
+       "medlineplus-hemoglobin-a1c-hba1c-test",
+       "medlineplus-hemoglobin-a1c-hba1c-test",
+       "medlineplus-hemoglobin-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "missing_ranges": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 3,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "TSH",
+      "expected": [
+       "medlineplus-tsh-thyroid-stimulating-hormone-test"
+      ],
+      "retrieved": [
+       "medlineplus-tsh-thyroid-stimulating-hormone-test",
+       "medlineplus-tsh-thyroid-stimulating-hormone-test",
+       "medlineplus-tsh-thyroid-stimulating-hormone-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Vitamin B12",
+      "expected": [
+       "medlineplus-vitamin-b-test"
+      ],
+      "retrieved": [
+       "medlineplus-vitamin-b-test",
+       "medlineplus-vitamin-b-test",
+       "medlineplus-vitamin-b-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "CRP",
+      "expected": [
+       "medlineplus-c-reactive-protein-crp-test"
+      ],
+      "retrieved": [
+       "medlineplus-c-reactive-protein-crp-test",
+       "medlineplus-c-reactive-protein-crp-test",
+       "medlineplus-c-reactive-protein-crp-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "conflicting_values": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 2,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "Hemoglobin",
+      "expected": [
+       "medlineplus-hemoglobin-test"
+      ],
+      "retrieved": [
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Creatinine",
+      "expected": [
+       "medlineplus-creatinine-test"
+      ],
+      "retrieved": [
+       "medlineplus-creatinine-test",
+       "medlineplus-creatinine-test",
+       "medlineplus-creatinine-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "prompt_injection": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 1,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "Hemoglobin",
+      "expected": [
+       "medlineplus-hemoglobin-test"
+      ],
+      "retrieved": [
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "unsupported_tests": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": 1.0,
+    "covered_tests": 1,
+    "uncovered_tests": 3,
+    "per_test": [
+     {
+      "test": "Ferritin",
+      "expected": [],
+      "retrieved": [],
+      "abstained": true
+     },
+     {
+      "test": "PSA",
+      "expected": [],
+      "retrieved": [],
+      "abstained": true
+     },
+     {
+      "test": "Lipase",
+      "expected": [],
+      "retrieved": [],
+      "abstained": true
+     },
+     {
+      "test": "Hemoglobin",
+      "expected": [
+       "medlineplus-hemoglobin-test"
+      ],
+      "retrieved": [
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "lipid_thyroid": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 5,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "Total Cholesterol",
+      "expected": [
+       "medlineplus-cholesterol-levels"
+      ],
+      "retrieved": [
+       "medlineplus-cholesterol-levels",
+       "medlineplus-cholesterol-levels",
+       "medlineplus-cholesterol-levels"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Triglycerides",
+      "expected": [
+       "medlineplus-triglycerides-test"
+      ],
+      "retrieved": [
+       "medlineplus-triglycerides-test",
+       "medlineplus-triglycerides-test",
+       "medlineplus-triglycerides-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "TSH",
+      "expected": [
+       "medlineplus-tsh-thyroid-stimulating-hormone-test"
+      ],
+      "retrieved": [
+       "medlineplus-tsh-thyroid-stimulating-hormone-test",
+       "medlineplus-tsh-thyroid-stimulating-hormone-test",
+       "medlineplus-tsh-thyroid-stimulating-hormone-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Vitamin D",
+      "expected": [
+       "medlineplus-vitamin-d-test"
+      ],
+      "retrieved": [
+       "medlineplus-vitamin-d-test",
+       "medlineplus-vitamin-d-test",
+       "medlineplus-vitamin-d-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "CRP",
+      "expected": [
+       "medlineplus-c-reactive-protein-crp-test"
+      ],
+      "retrieved": [
+       "medlineplus-c-reactive-protein-crp-test",
+       "medlineplus-c-reactive-protein-crp-test",
+       "medlineplus-c-reactive-protein-crp-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "cbc_abnormal": {
+    "top1_accuracy": 1.0,
+    "hit_rate_at_k": 1.0,
+    "abstention_rate": null,
+    "covered_tests": 4,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "WBC",
+      "expected": [
+       "medlineplus-white-blood-count-wbc",
+       "medlineplus-complete-blood-count-cbc"
+      ],
+      "retrieved": [
+       "medlineplus-white-blood-count-wbc",
+       "medlineplus-white-blood-count-wbc",
+       "medlineplus-white-blood-count-wbc"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Platelets",
+      "expected": [
+       "medlineplus-platelet-tests",
+       "medlineplus-complete-blood-count-cbc"
+      ],
+      "retrieved": [
+       "medlineplus-platelet-tests",
+       "medlineplus-platelet-tests",
+       "medlineplus-platelet-tests"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Hematocrit",
+      "expected": [
+       "medlineplus-hematocrit-test"
+      ],
+      "retrieved": [
+       "medlineplus-hematocrit-test",
+       "medlineplus-hematocrit-test",
+       "medlineplus-hematocrit-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Hemoglobin",
+      "expected": [
+       "medlineplus-hemoglobin-test"
+      ],
+      "retrieved": [
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test",
+       "medlineplus-hemoglobin-test"
+      ],
+      "top1_correct": true
+     }
+    ]
+   },
+   "renal_panel": {
+    "top1_accuracy": 0.75,
+    "hit_rate_at_k": 0.75,
+    "abstention_rate": null,
+    "covered_tests": 4,
+    "uncovered_tests": 0,
+    "per_test": [
+     {
+      "test": "Creatinine",
+      "expected": [
+       "medlineplus-creatinine-test"
+      ],
+      "retrieved": [
+       "medlineplus-creatinine-test",
+       "medlineplus-creatinine-test",
+       "medlineplus-creatinine-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Sodium",
+      "expected": [
+       "medlineplus-sodium-blood-test",
+       "medlineplus-electrolyte-panel"
+      ],
+      "retrieved": [
+       "medlineplus-sodium-blood-test",
+       "medlineplus-sodium-blood-test",
+       "medlineplus-sodium-blood-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "Potassium",
+      "expected": [
+       "medlineplus-potassium-blood-test",
+       "medlineplus-electrolyte-panel"
+      ],
+      "retrieved": [
+       "medlineplus-potassium-blood-test",
+       "medlineplus-potassium-blood-test",
+       "medlineplus-potassium-blood-test"
+      ],
+      "top1_correct": true
+     },
+     {
+      "test": "BUN",
+      "expected": [
+       "medlineplus-basic-metabolic-panel-bmp",
+       "medlineplus-comprehensive-metabolic-panel-cmp"
+      ],
+      "retrieved": [],
+      "top1_correct": false
+     }
+    ]
+   }
+  }
+ },
+ "validator": {
+  "aggregate": {
+   "clean_outputs": 9,
+   "clean_outputs_passed": 9,
+   "clean_issue_codes": {},
+   "mean_detection_rate_by_wording": {
+    "explicit": 1.0,
+    "paraphrase": 0.0,
+    "n/a": 0.9841269841269841
+   }
+  },
+  "per_fault": {
+   "value_changed": {
+    "kind": "value",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "unit_changed": {
+    "kind": "value",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "range_changed": {
+    "kind": "value",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "invented_test": {
+    "kind": "value",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "invalid_citation": {
+    "kind": "citation",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "uncited_background": {
+    "kind": "grounding",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 0,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "fabricated_number": {
+    "kind": "grounding",
+    "wording": "n/a",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 0,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "unsupported_abnormality": {
+    "kind": "abnormality",
+    "wording": "n/a",
+    "applicable": 7,
+    "detected": 6,
+    "blocked": 6,
+    "missed_cases": [
+     "conflicting_values"
+    ],
+    "detection_rate": 0.8571428571428571
+   },
+   "missed_abnormality": {
+    "kind": "abnormality",
+    "wording": "n/a",
+    "applicable": 7,
+    "detected": 7,
+    "blocked": 0,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "diagnosis_explicit": {
+    "kind": "safety",
+    "wording": "explicit",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "diagnosis_paraphrase": {
+    "kind": "safety",
+    "wording": "paraphrase",
+    "applicable": 9,
+    "detected": 0,
+    "blocked": 0,
+    "missed_cases": [
+     "cbc_normal",
+     "metabolic_abnormal",
+     "missing_ranges",
+     "conflicting_values",
+     "prompt_injection",
+     "unsupported_tests",
+     "lipid_thyroid",
+     "cbc_abnormal",
+     "renal_panel"
+    ],
+    "detection_rate": 0.0
+   },
+   "treatment_explicit": {
+    "kind": "safety",
+    "wording": "explicit",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "treatment_paraphrase": {
+    "kind": "safety",
+    "wording": "paraphrase",
+    "applicable": 9,
+    "detected": 0,
+    "blocked": 0,
+    "missed_cases": [
+     "cbc_normal",
+     "metabolic_abnormal",
+     "missing_ranges",
+     "conflicting_values",
+     "prompt_injection",
+     "unsupported_tests",
+     "lipid_thyroid",
+     "cbc_abnormal",
+     "renal_panel"
+    ],
+    "detection_rate": 0.0
+   },
+   "reassurance_explicit": {
+    "kind": "safety",
+    "wording": "explicit",
+    "applicable": 9,
+    "detected": 9,
+    "blocked": 9,
+    "missed_cases": [],
+    "detection_rate": 1.0
+   },
+   "reassurance_paraphrase": {
+    "kind": "safety",
+    "wording": "paraphrase",
+    "applicable": 9,
+    "detected": 0,
+    "blocked": 0,
+    "missed_cases": [
+     "cbc_normal",
+     "metabolic_abnormal",
+     "missing_ranges",
+     "conflicting_values",
+     "prompt_injection",
+     "unsupported_tests",
+     "lipid_thyroid",
+     "cbc_abnormal",
+     "renal_panel"
+    ],
+    "detection_rate": 0.0
+   }
+  }
+ },
+ "llm": {
+  "skipped": "GEMINI_API_KEY is not set, so no model outputs were generated. No LLM results are reported."
+ },
+ "human": {
+  "status": "not collected"
+ }
+}
