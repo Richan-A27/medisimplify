@@ -1,0 +1,11 @@
+{
+  "name": "medisimplify-presentation",
+  "private": true,
+  "scripts": {
+    "build": "node deck.js MediSimplify_Review.pptx"
+  },
+  "dependencies": {
+    "jszip": "^3.10.2",
+    "pptxgenjs": "^3.12.0"
+  }
+}

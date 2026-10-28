@@ -42,3 +42,6 @@ samples/
 # Playwright output
 test-results/
 playwright-report/
+
+# Filled-in course report: contains template stock images and certification page; kept local
+docs/report/*.docx
